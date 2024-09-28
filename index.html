@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+
+<!---second part-->
+<br><br>
+    
+      <header class="header">
+       <div>
+           <h1 class="tittle">Interactive</h1>
+           <h4 class="tittle">Geometry Genius</h4>
+       </div>
+       <div>
+           <button class="bts">Blog</button>
+       </div>
+ 
+   </header>
+     <br>
+     <br>
+     <main>
+         <div class="top-div">
+             <!------shape container-->
+             <div class="shape-container">
+                 <!--single shape-->
+                 <div class="triangle">
+                     <img class="img" src="img/triangle.png" alt="">
+                     <div class="div">
+                         <h2>Triangle</h2>
+                         <p>Area (A) = 0.5 * b * h</p>
+                         <div>
+                             <input id="triangle-base" class="f-input" type="text" placeholder="b">
+                             <span class="f-span">cm</span>
+                             <input id="triangle-height" class="s-input" type="text" placeholder="h">
+                             <span>cm</span>
+                      </div>
+                      <br>
+                      <div>
+                         <p>Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
+     
+                      </div>
+                      <div>
+                         <button onclick="calculateTriangleArea()" class="btn">Calculate</button>
+                      </div>
+                     </div>
+     
+                 </div>
+                 <!--single shape-->
+                 <div class="triangle">
+                     <img class="img" src="img/rectangle.png" alt="">
+                     <div class="div">
+                         <h2>Rectangle</h2>
+                         <p>Area (A) = w * I</p>
+                         <div>
+                             <input id="Rectangle-base" class="f-input" type="text" placeholder="w">
+                             <span class="f-span">cm</span>
+                             <input id="Rectangle-height" class="s-input" type="text" placeholder="l">
+                             <span>cm</span>
+                      </div>
+                      <br>
+                      <div>
+                        <p>Area: <span id="Rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
+    
+                     </div>
+                         <div>
+                         <button onclick="calculateRectangleArea()" class="btn">Calculate</button>
+                      </div>
+                     </div>
+     
+                 </div>
+                 <!--single shape-->
+                 <div class="triangle">
+                     <img class="img" src="img/parallelogram.png" alt="">
+                     <div class="div">
+                         <h2>Parallelogram</h2>
+                         <p>Area (A) = b * h</p> 
+                         <div>
+                            <input id="Parallelogram-base" class="f-input" type="text" placeholder="b">
+                            <span class="f-span">cm</span>
+                            <input id="Parallelogram-height" class="s-input" type="text" placeholder="h">
+                            <span>cm</span>
+                     </div>
+                         <br>
+                      <div>
+                         <p>Area: <span id="Parallelogram-area">0</span> <span>cm<sup>2</sup></span></p>
+     
+                      </div>
+                      <div>
+                         <button onclick="calculateParallelogramArea()" class="btn">Calculate</button>
+                      </div>
+                     </div>
+     
+                 </div>
+              <!--single part-->
+              <div class="home">
+                <h4>Area Calculation</h4>
+            </div>
+         </div>
+             </div>
+             
+             <br>
+            
+             <div class="top-div">
+                <!------shape container-->
+                <div class="shape-container">
+                    <!--single shape-->
+           <div class="triangle">
+           <img class="img" src="img/rhombus.png" alt="">
+           <div class="div">
+          <h2>Rhombus</h2>
+          <p>Area: <span>(A) = </span> 0.5 * <span>d<sub>1</sub>*<span>d<sub>2</sub></span></p>
+          <div>
+            <input id="Rhombus-1" class="f-input" type="text" placeholder="d1">
+            <span class="f-span">cm</span>
+            <input id="Rhombus-2" class="s-input" type="text" placeholder="d2">
+            <span>cm</span>
+     </div>
+             <br>
+            <div>
+                <p>Area: <span id="Rhombus-area">0</span> <span>cm<sup>2</sup></span></p>
+
+             </div>
+                    <div>
+                            <button onclick="calculateRhombusArea()" class="btn">Calculate</button>
+                         </div>
+                        </div>
+        
+                    </div>
+                    <!--single shape-->
+                    <div class="triangle">
+                        <img class="img" src="img/pentagon.png" alt="">
+                        <div class="div">
+                            <h2>Pentagon</h2>
+                            <p>Area (A) = 0.5 * p * b</p>
+                            <div>
+                                <input id="Pentagon-p" class="f-input" type="text" placeholder="p">
+                                <span class="f-span">cm</span>
+                                <input id="Pentagon-h" class="s-input" type="text" placeholder="h">
+                                <span>cm</span>
+                         </div>
+                           <br>
+                         
+                        <div>
+                            <p>Area: <span id="Pentagon-area">0</span> <span>cm<sup>2</sup></span></p>
+        
+                         </div>
+                         <div>
+                            <button onclick="calculatePentagonArea()" class="btn">Calculate</button>
+                         </div>
+                        </div>
+        
+                    </div>
+                    <!--single shape-->
+                    <div class="triangle">
+                        <img class="img" src="img/ellipse.png" alt="">
+                        <div class="div">
+                            <h2>Ellipse</h2>
+                            <p>Area (A) = &pi;ab</p>
+                            <div>
+                                <input id="Ellipse-a" class="f-input" type="text" placeholder="a">
+                                <span class="f-span">cm</span>
+                                <input id="Ellipse-b" class="s-input" type="text" placeholder="b">
+                                <span>cm</span>
+                         </div>
+                           <br>
+                        
+                         <div>
+                            <p>Area: <span id="Ellipse-area">0</span> <span>cm<sup>2</sup></span></p>
+        
+                         </div>
+                         <div>
+                            <button onclick="calculateEllipseArea()" class="btn">Calculate</button>
+                         </div>
+                        </div>
+        
+                    </div>
+                 <!--single part-->
+                 
+    
+            </div>
+                </div>
+     </main>
+     <script src="js/Triangle.js"></script>
+     <script src="js/Parallelogram.js"></script>
+     <script src="js/Ellipse.js"></script>
+     <script src="js/Rhombus.js"></script>
+     <script src="js/Pentagon.js"></script>
+</body>
+</html>
